@@ -128,11 +128,8 @@
           <span>ระบบจัดการสมุดรายวัน: บันทึกรายการ (Journal Voucher)</span>
         </div>
         <div class="checklist-item">
-          <span class="checklist-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-              stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-              <polyline points="20 6 9 17 4 12" />
-            </svg></span>
-          <span>ระบบ Ending Inventory Adjustment ปรับปรุงสินค้าคงเหลือปลายงวด (ปิดระบบ : กำลังปรับปรุงระบบ)</span>
+          <span class="checklist-icon" style="color: var(--primary-blue);"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg></span>
+          <span>ระบบ Ending Inventory Adjustment ปรับปรุงสินค้าคงเหลือปลายงวด <strong style="color: var(--primary-blue);">[สิทธิ์แอปแยกเฉพาะทางในอนาคต]</strong> (ปิดระบบออกจาก GL เพื่อพัฒนาเป็นแอปพลิเคชันเดี่ยวแยกต่างหาก โดยผู้ซื้อ RINUKZ GL จะได้รับสิทธิ์ในการเข้าใช้งานแอปแยกนี้ในอนาคต)</span>
         </div>
         <div class="checklist-item">
           <span class="checklist-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -457,7 +454,7 @@
           </a>
           <h3 class="download-col-title">
             <a href="https://drive.google.com/file/d/1aFQaJx__riTxsrO1X59tRnGz5IwMTLja/view?usp=drive_web"
-              target="_blank">RINUKZ GL Standard (Demo)</a>
+              target="_blank">RINUKZ GL Mini (Demo)</a>
           </h3>
           <ul class="bullet-list download-list">
             <li>สำหรับผู้ใช้ที่ต้องการทดลองใช้งานระบบ</li>
@@ -482,14 +479,14 @@
           </a>
           <h3 class="download-col-title">
             <a href="https://drive.google.com/file/d/13d0WBs1rs8an9x4YzssTE-Som2OkbLPI/view?usp=drive_link"
-              target="_blank">RINUKZ GL Standard</a>
+              target="_blank">RINUKZ GL Mini (Cloud Drive)</a>
           </h3>
           <ul class="bullet-list download-list">
-            <li>สำหรับสมาชิกที่ลงทะเบียน License เท่านั้น</li>
-            <li>สำหรับผู้ใช้ที่ชอบรูปแบบ Stand alone ส่วนตัว ไม่ต้องการใช้งานแบบ Cloud Drive</li>
-            <li>(Standard Version รองรับการทำงานบน Cloud drive เช่นกัน ขาดแค่ระบบป้องกันการเข้าระบบฐานข้อมูลซ้อนของ user
-              - Cloud Drive Concurrency Lock System)</li>
-            <li class="highlight-terms">พร้อมคู่มือการติดตั้งและคู่มือใช้งาน</li>
+            <li>สำหรับผู้ใช้ที่ต้องการทำงานผ่านระบบ Cloud Drive</li>
+            <li>ข้อมูลเชื่อมโยง (Sync) ออนไลน์อัตโนมัติ ทำงานร่วมกันได้หลายคน / สำรองข้อมูลอัตโนมัติ 24 ชม.</li>
+            <li>รองรับการเชื่อมต่อจากต่างอุปกรณ์ (User) และออฟฟิศต่างสาขาได้อย่างสะดวก</li>
+            <li class="red-note">Cloud Drive Version มีระบบป้องกันการเข้าระบบฐานข้อมูลซ้อนของ user (Cloud Drive
+              Concurrency Lock System)</li>
           </ul>
         </div>
 
@@ -506,10 +503,10 @@
           </a>
           <h3 class="download-col-title">
             <a href="https://drive.google.com/file/d/1MC38oWS4fLiRAt52OaeMjPyLTDyPuyl_/view" target="_blank">RINUKZ GL
-              Cloud Drive</a>
+              Pro (Cloud Drive)</a>
           </h3>
           <ul class="bullet-list download-list">
-            <li>สำหรับสมาชิกที่ลงทะเบียน License เท่านั้น</li>
+
             <li>สำหรับผู้ใช้ที่ต้องการทำงานผ่านระบบ Cloud Drive</li>
             <li>ข้อมูลเชื่อมโยง (Sync) ออนไลน์อัตโนมัติ ทำงานร่วมกันได้หลายคน / สำรองข้อมูลอัตโนมัติ 24 ชม.</li>
             <li>รองรับการเชื่อมต่อจากต่างอุปกรณ์ (User) และออฟฟิศต่างสาขาได้อย่างสะดวก</li>
@@ -596,8 +593,7 @@
   <section class="section" id="contact" style="border-bottom: 1px solid var(--border-light);">
     <div class="container contact-container">
       <h2 style="font-size: 1.8rem; color: var(--text-dark); margin-bottom: 8px;">ติดต่อสอบถามเพิ่มเติม</h2>
-      <p style="color: var(--text-muted);">หากท่านมีข้อสงสัยหรือสนใจสั่งซื้อโปรแกรมบัญชี RINUKZ GL
-        สามารถติดต่อเราผ่านที่อยู่อีเมลด้านล่างนี้ได้ทันที</p>
+      <p style="color: var(--text-muted);">หากท่านมีข้อสงสัยหรือสนใจสั่งซื้อ</p>
 
       <div class="email-copy-wrapper" id="email-box-copy" title="คลิกเพื่อคัดลอกอีเมล">
         <span class="email-copy-text">rinukzstore@gmail.com</span>
@@ -616,7 +612,7 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="container">
-      <p>&copy; 2026 RINUKZ GENERAL LEDGER ACCOUNTING SYSTEM. All Rights Reserved.</p>
+      <p>&copy; Rinukz Proware. All Rights Reserved.</p>
     </div>
   </footer>
 
