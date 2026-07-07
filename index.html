@@ -1,11 +1,330 @@
 <!DOCTYPE html>
-<html lang="th">
+<html lang="th" itemscope="" itemtype="http://schema.org/WebPage">
 <head>
-    <meta charset="UTF-8">
-    <title>ยินดีต้อนรับสู่เว็บของฉัน</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>RINUKZ GENERAL LEDGER - ระบบบัญชีแยกประเภทพกพายุคใหม่</title>
+  <meta name="description" content="RINUKZ GENERAL LEDGER ACCOUNTING SYSTEM - ระบบบัญชีแยกประเภทระดับมืออาชีพ พกพาง่าย ฟีเจอร์ครบครัน ทำงานร่วมกับ Google Drive, OneDrive และสำรองข้อมูลอัตโนมัติ">
+  
+  <!-- SEO & Open Graph Tags -->
+  <meta property="og:title" content="RINUKZ GENERAL LEDGER">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://rinukz.github.io/">
+  <meta property="og:description" content="ระบบบัญชีแยกประเภทพกพาง่าย ฟีเจอร์ครบครัน ทำงานรวดเร็ว ปลอดภัย ตลอดชีพ">
+  
+  <!-- Google Fonts Style Sheets and Main Style -->
+  <link rel="stylesheet" href="./assets/style.css">
 </head>
 <body>
-    <h1>เย้! เว็บไซต์ของฉันใช้งานได้แล้ว</h1>
-    <p>นี่คือหน้าเว็บฟรีจาก GitHub Pages</p>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <div class="container navbar-container">
+      <a href="#" class="logo" id="nav-logo">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color: #3b82f6;"><path d="M3 3v18h18"/><path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"/></svg>
+        <span>RINUKZ GL</span>
+      </a>
+      <ul class="nav-links" id="nav-menu">
+        <li><a href="#features">คุณสมบัติเด่น</a></li>
+        <li><a href="#simulator">ทดลองใช้งาน</a></li>
+        <li><a href="#tech">โครงสร้างระบบ</a></li>
+        <li><a href="#pricing">ลิขสิทธิ์ตลอดชีพ</a></li>
+        <li><a href="#contact">ติดต่อเรา</a></li>
+      </ul>
+      <a href="#contact" class="nav-cta" id="nav-cta-btn">เริ่มต้นใช้งาน</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-tagline">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+          ระบบบัญชีแยกประเภทแบบพกพา (Standalone & Cloud)
+        </div>
+        <h1 class="hero-title" id="main-heading">
+          จัดการบัญชีแยกประเภทง่ายๆ
+          <span>RINUKZ GENERAL LEDGER</span>
+        </h1>
+        <p class="hero-desc">
+          ระบบบัญชีแยกประเภทระดับมืออาชีพ พกพาง่าย ฟีเจอร์ครบครัน ไม่ต้องติดตั้งฐานข้อมูลยุ่งยาก สามารถทำงานต่อยอดจากไฟล์สำรองข้อมูลได้ทันที รันได้ทั้งแบบเครื่องเดี่ยว (Standalone) และเซิร์ฟเวอร์เว็บ/คลาวด์ในตัว
+        </p>
+        <div class="hero-actions">
+          <a href="#simulator" class="btn btn-primary" id="hero-btn-primary">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            ทดลองใช้ระบบจำลอง
+          </a>
+          <a href="#features" class="btn btn-secondary" id="hero-btn-secondary">เรียนรู้เพิ่มเติม</a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="tech-visual-card">
+          <div class="tech-stack-row">
+            <span class="tech-stack-label">Database Mode</span>
+            <span class="tech-stack-badge" style="color: #2dd4bf; background: rgba(13, 148, 136, 0.1);">SQLite Portable</span>
+          </div>
+          <div class="tech-stack-row">
+            <span class="tech-stack-label">Engine Platform</span>
+            <span class="tech-stack-badge" style="color: #60a5fa; background: rgba(59, 130, 246, 0.1);">Go + Wails / Cloud</span>
+          </div>
+          <div class="tech-stack-row" style="border: none; margin: 0; padding: 0;">
+            <span class="tech-stack-label">Cloud Backup</span>
+            <span class="tech-stack-badge" style="color: #c084fc; background: rgba(192, 132, 252, 0.1);">OneDrive / G-Drive</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Core Features Grid -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-header">
+        <h2>ทำไมต้องเลือก RINUKZ General Ledger?</h2>
+        <p>ฟีเจอร์เด่นที่ออกแบบมาเพื่อความคล่องตัวและตอบโจทย์บัญชียุคใหม่ ทั้งความยืดหยุ่น ความปลอดภัย และประสิทธิภาพสูง</p>
+      </div>
+      
+      <div class="features-grid">
+        <!-- Feature 1 -->
+        <div class="glass-card" id="feature-1">
+          <div class="feature-icon-wrapper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+          </div>
+          <h3 class="feature-title">Cloud Drive Integration</h3>
+          <p class="feature-desc">รองรับการซิงค์ข้อมูลอย่างอิสระร่วมกับ Google Drive และ OneDrive เพื่อการอัปเดตและเข้าถึงงบการเงินได้จากทุกที่ทุกเวลา</p>
+        </div>
+        
+        <!-- Feature 2 -->
+        <div class="glass-card" id="feature-2">
+          <div class="feature-icon-wrapper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+          </div>
+          <h3 class="feature-title">Portable & Standalone DB</h3>
+          <p class="feature-desc">ไม่ต้องการเครื่อง SQL Server สตรีมมิ่งที่ติดตั้งยุ่งยาก ข้อมูลเก็บในรูปแบบ SQLite ไฟล์เดียว สามารถก็อปปี้ ย้าย หรือเปลี่ยนเครื่องทำงานต่อได้ทันทีแบบ "Copy & Paste"</p>
+        </div>
+        
+        <!-- Feature 3 -->
+        <div class="glass-card" id="feature-3">
+          <div class="feature-icon-wrapper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3 class="feature-title">24 Hours Backup</h3>
+          <p class="feature-desc">ระบบสำรองข้อมูลในเครื่องแบบเรียลไทม์และคลาวด์ ปลอดภัยจากการสูญหายของข้อมูลสำคัญ สามารถย้อนประวัติบัญชีเพื่อตรวจสอบได้เสมอ</p>
+        </div>
+
+        <!-- Feature 4 -->
+        <div class="glass-card" id="feature-4">
+          <div class="feature-icon-wrapper">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+          </div>
+          <h3 class="feature-title">Lifetime License</h3>
+          <p class="feature-desc">ซื้อขาด จ่ายเงินครั้งเดียว ได้รับการดูแลและใช้งานตัวซอฟต์แวร์ไปยาว ๆ ตลอดชีพ ไม่มีข้อผูกมัดหรือค่าบริการแบบรายเดือนที่เพิ่มภาระให้ธุรกิจ</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Ledger Simulator -->
+  <section class="section tech-section" id="simulator">
+    <div class="container">
+      <div class="section-header">
+        <h2>จำลองระบบแสดงรายงานทางบัญชี</h2>
+        <p>ทดลองใช้งานตัวอย่างหน้าจอจำลองสมุดบัญชีแยกประเภท งบแสดงฐานะการเงิน และงบกำไรขาดทุนของจริงเพื่อทดสอบความสะดวก</p>
+      </div>
+
+      <div class="simulator-container">
+        <!-- Simulator Controls -->
+        <div class="simulator-header">
+          <div class="simulator-title-group">
+            <div class="simulator-dot"></div>
+            <div class="simulator-title">RINUKZ GL - LIVE DEMO</div>
+          </div>
+          <div class="simulator-tabs">
+            <button class="tab-btn active" data-tab="gl" id="tab-btn-gl">สมุดบัญชีแยกประเภท (GL)</button>
+            <button class="tab-btn" data-tab="bs" id="tab-btn-bs">งบแสดงฐานะการเงิน (BS)</button>
+            <button class="tab-btn" data-tab="is" id="tab-btn-is">งบกำไรขาดทุน (IS)</button>
+          </div>
+        </div>
+
+        <!-- Simulator Search & Filters -->
+        <div class="simulator-toolbar">
+          <div class="search-wrapper">
+            <span class="search-icon">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            </span>
+            <input type="text" placeholder="ค้นหา รหัส / บัญชี / คำอธิบาย..." class="search-input" id="search-input">
+          </div>
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all" id="filter-btn-all">ทั้งหมด</button>
+            <button class="filter-btn" data-filter="deposit" id="filter-btn-debit">เดบิต (สินทรัพย์)</button>
+            <button class="filter-btn" data-filter="withdraw" id="filter-btn-credit">เครดิต (หนี้สิน/ทุน/รายได้)</button>
+          </div>
+        </div>
+
+        <!-- Table Display -->
+        <div class="simulator-body">
+          <table class="ledger-table" id="ledger-table">
+            <thead>
+              <tr>
+                <th width="12%">วันที่ (Date)</th>
+                <th width="10%">รหัสรายการ</th>
+                <th width="28%">ชื่อบัญชี (Account Name)</th>
+                <th width="26%">คำอธิบายรายการ (Description)</th>
+                <th width="12%">สถานะการเงิน</th>
+                <th width="12%" style="text-align: right;">เดบิต (Dr.)</th>
+                <th width="12%" style="text-align: right;">เครดิต (Cr.)</th>
+              </tr>
+            </thead>
+            <tbody id="ledger-table-body">
+              <!-- JS code will inject rows here dynamically -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Infrastructure Details -->
+  <section class="section" id="tech">
+    <div class="container tech-grid">
+      <div class="tech-features">
+        <h2 style="font-size: 2.2rem; background: linear-gradient(to right, #ffffff, #94a3b8); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">โครงสร้างเทคโนโลยีแห่งอนาคต</h2>
+        <p style="margin-bottom: 20px;">เราคิดค้นสถาปัตยกรรมระบบที่ช่วยลดการบำรุงรักษาในระยะยาว เพื่อให้การทำบัญชีเป็นระบบที่เรียบง่ายและยั่งยืนสำหรับผู้ประกอบการยุคใหม่</p>
+        
+        <div class="tech-features-list">
+          <!-- Item 1 -->
+          <div class="tech-feature-item">
+            <div class="tech-feature-check">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div>
+              <h4 class="tech-feature-title">Standalone Database Container</h4>
+              <p class="feature-desc">เก็บข้อมูลแบบแยกส่วนอิสระ โครงสร้างฐานข้อมูล SQLite ทนทานสูง สะดวกรวดเร็วในการกู้คืนระบบเมื่อเกิดปัญหาฉุกเฉิน</p>
+            </div>
+          </div>
+          <br>
+          <!-- Item 2 -->
+          <div class="tech-feature-item">
+            <div class="tech-feature-check">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <div>
+              <h4 class="tech-feature-title">100% Local Deployment with Web capabilities</h4>
+              <p class="feature-desc">ประมวลผลในระบบ Local ด้วยความเร็วสูงสุด แต่ยังรองรับการเข้าถึงระยะไกล (Remote Access) ผ่าน Cloud Web Server ในตัว</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="tech-image-container">
+        <div class="tech-visual-card">
+          <div class="tech-stack-row">
+            <span class="tech-stack-label">Frontend Stack</span>
+            <span class="tech-stack-badge" style="color: #f43f5e; background: rgba(244, 63, 94, 0.1);">HTML5 / CSS / Vanilla JS</span>
+          </div>
+          <div class="tech-stack-row">
+            <span class="tech-stack-label">Backend Engine</span>
+            <span class="tech-stack-badge" style="color: #06b6d4; background: rgba(6, 182, 212, 0.1);">Go Language</span>
+          </div>
+          <div class="tech-stack-row">
+            <span class="tech-stack-label">Local UI Bridge</span>
+            <span class="tech-stack-badge" style="color: #8b5cf6; background: rgba(139, 92, 246, 0.1);">Wails Platform</span>
+          </div>
+          <div class="tech-stack-row" style="border: none; margin: 0; padding: 0;">
+            <span class="tech-stack-label">Build Engine</span>
+            <span class="tech-stack-badge" style="color: #eab308; background: rgba(234, 179, 8, 0.1);">Future-Proof Standalone</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Details Section -->
+  <section class="section tech-section" id="pricing">
+    <div class="container pricing-section">
+      <div class="section-header">
+        <h2>ลิขสิทธิ์ใช้งานตลอดชีพ</h2>
+        <p>ยกระดับระบบการทำงานบัญชีทั่วไป ไปสู่ระบบที่เป็นมิตรกับอนาคตในงบประมาณที่คุ้มค่าสูงสุด</p>
+      </div>
+
+      <div class="pricing-card-wrapper">
+        <div class="glass-card pricing-card" id="pricing-card">
+          <div class="pricing-badge">BEST VALUE</div>
+          <h3 class="price-title">RINUKZ GL Lifetime</h3>
+          <p>สิทธิ์ติดตั้งและใช้งานโปรแกรมบัญชีแยกประเภทตลอดชีพ</p>
+          
+          <div class="price-val">
+            ฿9,900
+            <span>/ จ่ายครั้งเดียวจบ</span>
+          </div>
+
+          <ul class="price-benefits">
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              ใช้งานได้ 1 ทะเบียนบริษัท (1 Company Database)
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              สิทธิ์อัปเกรดความสามารถ/Patch ระบบฟรีตลอดการใช้งาน
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              สำรองและกู้คืนข้อมูลผ่าน Google Drive / OneDrive ได้
+            </li>
+            <li>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+              บริการรีโมตซัพพอร์ตช่วยเหลือในการติดตั้งและดูแลระบบ
+            </li>
+          </ul>
+
+          <a href="#contact" class="btn btn-primary" style="width: 100%; justify-content: center;" id="pricing-buy-btn">ติดต่อสั่งซื้อและทดลองรัน</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & copy-to-clipboard Email -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="glass-card contact-card" id="contact-card">
+        <h2 style="font-size: 2rem; margin-bottom: 12px;">สนใจติดตั้ง หรือขอข้อมูลเพิ่มเติม?</h2>
+        <p>หากคุณสนใจขอทดลองระบบ รันโปรเจกต์ หรือต้องการระบบบัญชีแยกประเภทเพื่อใช้ในธุรกิจของคุณแบบกำหนดเอง สามารถติดต่อเราได้ทันที</p>
+        
+        <div class="email-box" id="email-copy-box" title="คลิกเพื่อคัดลอกอีเมล">
+          <div style="display: flex; align-items: center; gap: 12px;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: #3b82f6;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span class="email-text">rinukzstore@gmail.com</span>
+          </div>
+          <button class="email-copy-btn" id="email-copy-action">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+            คัดลอกอีเมล
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <ul class="footer-nav">
+        <li><a href="#features">คุณสมบัติเด่น</a></li>
+        <li><a href="#simulator">ทดลองใช้</a></li>
+        <li><a href="#tech">โครงสร้างระบบ</a></li>
+        <li><a href="#pricing">ลิขสิทธิ์ตลอดชีพ</a></li>
+      </ul>
+      <p>&copy; 2026 RINUKZ GENERAL LEDGER ACCOUNTING SYSTEM. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div class="copy-toast" id="copy-toast">คัดลอกที่อยู่อีเมลไปยังคลิปบอร์ดแล้ว!</div>
+
+  <!-- Client Interaction script -->
+  <script src="./assets/main.js"></script>
 </body>
 </html>
