@@ -574,3 +574,68 @@ h1, h2, h3, h4, h5, h6 {
     padding: 50px 0;
   }
 }
+
+/* Top Sticky Navigation Bar */
+.top-nav {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-light);
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.02);
+}
+
+.nav-menu {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-item {
+  width: 50%;
+  text-align: center;
+  padding: 18px 10px;
+  text-decoration: none;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-light);
+  border-bottom: 4px solid transparent;
+  transition: var(--transition);
+  font-family: var(--font-eng), var(--font-thai);
+  letter-spacing: 0.02em;
+}
+
+/* Individual tab hover states & active states */
+.nav-item-gl:hover, .nav-item-gl.active {
+  color: var(--primary-red);
+  border-bottom-color: var(--primary-red);
+  background: rgba(217, 34, 42, 0.02);
+}
+
+.nav-item-accounting:hover, .nav-item-accounting.active {
+  color: var(--primary-blue);
+  border-bottom-color: var(--primary-blue);
+  background: rgba(0, 123, 182, 0.02);
+}
+
+/* Coming Soon Badge */
+.coming-soon-badge {
+  display: inline-block;
+  background-color: rgba(0, 123, 182, 0.1);
+  color: var(--primary-blue);
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 4px 12px;
+  border-radius: 12px;
+  margin-top: 15px;
+  border: 1px solid rgba(0, 123, 182, 0.15);
+}
+
+/* Target Section Anchors Padding Offset for Sticky Nav (60px high) */
+#rinukz-gl-section, #rinukz-accounting-section {
+  scroll-margin-top: 60px;
+}

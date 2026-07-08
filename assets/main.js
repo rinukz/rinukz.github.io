@@ -16,4 +16,29 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
+
+  // Navigation Active Highlight on Scroll
+  const sections = document.querySelectorAll('#rinukz-gl-section, #rinukz-accounting-section');
+  const navItems = document.querySelectorAll('.nav-item');
+
+  window.addEventListener('scroll', () => {
+    let current = 'rinukz-gl-section'; // default fallback
+    const scrollPos = window.scrollY || window.pageYOffset;
+
+    sections.forEach(section => {
+      const sectionTop = section.offsetTop;
+      const sectionHeight = section.clientHeight;
+      // Subtracting offset for top menu (60px nav + 40px buffer)
+      if (scrollPos >= (sectionTop - 120)) {
+        current = section.getAttribute('id');
+      }
+    });
+
+    navItems.forEach(item => {
+      item.classList.remove('active');
+      if (item.getAttribute('href').slice(1) === current) {
+        item.classList.add('active');
+      }
+    });
+  });
 });
