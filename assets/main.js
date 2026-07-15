@@ -1,19 +1,30 @@
 document.addEventListener('DOMContentLoaded', () => {
   const emailBox = document.getElementById('email-box-copy');
+  const emailQuick = document.getElementById('email-quick-copy');
   const toastMsg = document.getElementById('copy-toast-msg');
 
-  if (emailBox && toastMsg) {
+  function showToast(message) {
+    if (!toastMsg) return;
+    toastMsg.innerText = message;
+    toastMsg.classList.add('show');
+    setTimeout(() => {
+      toastMsg.classList.remove('show');
+    }, 2500);
+  }
+
+  if (emailBox) {
     emailBox.addEventListener('click', () => {
-      const email = 'rinukzstore@gmail.com';
-      navigator.clipboard.writeText(email).then(() => {
-        // Show Toast
-        toastMsg.classList.add('show');
-        setTimeout(() => {
-          toastMsg.classList.remove('show');
-        }, 2500);
-      }).catch(err => {
-        console.error('Failed to copy text: ', err);
-      });
+      navigator.clipboard.writeText('rinukzstore@gmail.com').then(() => {
+        showToast('คัดลอกอีเมล rinukzstore@gmail.com เรียบร้อยแล้ว!');
+      }).catch(err => console.error(err));
+    });
+  }
+
+  if (emailQuick) {
+    emailQuick.addEventListener('click', () => {
+      navigator.clipboard.writeText('rinukzstore@gmail.com').then(() => {
+        showToast('คัดลอกอีเมล rinukzstore@gmail.com เรียบร้อยแล้ว!');
+      }).catch(err => console.error(err));
     });
   }
 
